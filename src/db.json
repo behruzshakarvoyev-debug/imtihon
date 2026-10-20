@@ -1,0 +1,21 @@
+{
+  "admins": [
+    { "id": 1, "username": "admin", "password": "admin123", "fullName": "Aziz Rahimov", "avatar": "https://i.pravatar.cc/150?img=12" }
+  ],
+  "groups": [
+    { "id": 1, "name": "FN-24", "course": "Frontend", "teacher": "Jasur Aliyev", "days": "toq", "time": "14:00", "monthlyPrice": 800000, "startDate": "2026-09-01", "status": "active" },
+    { "id": 2, "name": "BN-12", "course": "Backend", "teacher": "Dilnoza Karimova", "days": "juft", "time": "16:00", "monthlyPrice": 900000, "startDate": "2026-09-01", "status": "active" }
+  ],
+  "students": [
+    { "id": 1, "firstName": "Ali", "lastName": "Karimov", "phone": "+998901234567", "birthDate": "2006-04-12", "groupId": 1, "status": "active", "joinedAt": "2026-09-01", "note": "" },
+    { "id": 2, "firstName": "Madina", "lastName": "Yusupova", "phone": "+998931112233", "birthDate": "2007-08-20", "groupId": 1, "status": "active", "joinedAt": "2026-09-01", "note": "" },
+    { "id": 3, "firstName": "Sardor", "lastName": "Rahmonov", "phone": "+998977778899", "birthDate": "2005-01-05", "groupId": 2, "status": "frozen", "joinedAt": "2026-09-05", "note": "Kasal" }
+  ],
+  "payments": [
+    { "id": 1, "studentId": 1, "amount": 800000, "month": "2026-10", "method": "karta", "paidAt": "2026-10-03" },
+    { "id": 2, "studentId": 2, "amount": 400000, "month": "2026-10", "method": "naqd", "paidAt": "2026-10-05" }
+  ],
+  "attendance": [
+    { "id": 1, "groupId": 1, "date": "2026-10-14", "records": [ { "studentId": 1, "present": true }, { "studentId": 2, "present": false } ] }
+  ]
+}

@@ -1,10 +1,18 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import { Toaster } from "@/components/ui/sonner";
+import "./index.css";
+import { getTheme, applyTheme } from "./utils/theme";
 
-createRoot(document.getElementById('root')).render(
+applyTheme(getTheme());
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <BrowserRouter>
+      <App />
+      <Toaster position="top-right" richColors />
+    </BrowserRouter>
+  </StrictMode>
+);

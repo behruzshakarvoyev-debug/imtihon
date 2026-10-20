@@ -1,0 +1,1 @@
+export { paymentSchema } from "./paymentSchema";
